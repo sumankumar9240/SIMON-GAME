@@ -10,13 +10,20 @@ let level=0;
 let h2=document.querySelector("h2");
 
 document.addEventListener("click",function(){
-    if(started == false){
-        console.log("Game is started");
+    if(started == false && !event.target.classList.contains("btn")){
         started=true;
 
         levelUp();
     }
 });
+
+// document.addEventListener("click",function(){
+//     if(started == false){
+//         started=true;
+
+//         levelUp();
+//     }
+// });
 
 
 function gameFlash(btn ){
@@ -58,7 +65,7 @@ function cheakAns(idx){
     }
     else{
         highScore.push(level);
-        h2.innerHTML = `Game Over! <br> Your Score was ${level} <br> Press any key to start <br>  your highest Score is ${Math.max(...highScore)-1}`;
+        h2.innerHTML = `Game Over! <br> Your Score was ${level} <br> Press any key to start <br>  your highest Score is ${Math.max(...highScore)}`;
         document.querySelector("body").style.backgroundColor = "red";
         setTimeout(function(){
             document.querySelector("body").style.backgroundColor = "white";
