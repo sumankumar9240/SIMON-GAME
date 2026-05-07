@@ -22,8 +22,8 @@ A simple and interactive Simon Game built using HTML, CSS, and JavaScript.
 4. The sequence gets harder after every level
 5. Wrong input will end the game
 
-<!-- ## 🌐 Live Demo
-https://sumankumarsk97097.github.io/SIMON-GAME/ -->
+## 🌐 Live Demo
+https://sumankumarsk97097.github.io/SIMON-GAME/
 
 ## 📂 Project Setup
 1. Clone the repository

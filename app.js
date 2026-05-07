@@ -65,7 +65,7 @@ function cheakAns(idx){
     }
     else{
         highScore.push(level);
-        h2.innerHTML = `Game Over! <br> Your Score was ${level} <br> Press any key to start <br>  your highest Score is ${Math.max(...highScore)}`;
+        h2.innerHTML = `Game Over! <br> Your Score was ${level} <br> Press any key or Tap on screen to start <br>  your highest Score is ${Math.max(...highScore)}`;
         document.querySelector("body").style.backgroundColor = "red";
         setTimeout(function(){
             document.querySelector("body").style.backgroundColor = "white";
